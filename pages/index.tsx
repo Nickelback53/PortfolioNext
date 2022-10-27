@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import { PropsWithChildren, useCallback, useEffect, useState } from 'react'
@@ -11,8 +11,11 @@ import axios from 'axios';
 import Bio from '../components/Bio';
 
 
+interface Props {
+  result: [];
+}
 
-const Home: NextPage = (result:PropsWithChildren) => {
+const Home: NextPage<Props> = (props) => {
   //console.log(result);
 
   return (
@@ -32,7 +35,7 @@ const Home: NextPage = (result:PropsWithChildren) => {
         <Bio/>
       </section>
       <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font ">
-        <Project result={result} />
+        <Project result={props.result} />
       </section>
    
 
@@ -44,7 +47,7 @@ export default Home
 
 
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps<Props> = async () => {
 
 
   const options = {
