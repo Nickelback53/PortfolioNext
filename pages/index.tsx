@@ -26,7 +26,7 @@ const Home: NextPage<Props> = (props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font ">
-        <h2 className="w-0 overflow-hidden" id="home">홈화면</h2>
+        <h2 className="w-0 overflow-hidden" id="home">Home</h2>
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <Hero />
         </div>
