@@ -20,12 +20,13 @@ export default function Project(result: any) {
     return (
 
         <div className="flex flex-col items-center justify-center min-h-screen px-3 mb-10" >
-            <h2 className="text-4xl font-bold sm:text-6xl" id="project">
+            <h2 className="w-0 overflow-hidden" id="project">Project</h2>
+            <h1 className="text-4xl font-bold sm:text-6xl">
                 총 프로젝트:
                 <span className="pl-4 text-blue-500">
                     {projects.length}
                 </span>
-            </h2>
+            </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 p-12 m-4 gap-8 ">
                 {
                     projects.map((project: any = {}) => {
