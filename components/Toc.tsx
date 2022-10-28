@@ -23,8 +23,8 @@ const Toc = () => {
 
                 {headingEls.map((h, i) => {
                     return (
-                        <div className={currentId === h.id ? 'acitve' : 'not-active'}  key={i}  >
-                            <a href={`#${h.id}`}>{h.textContent}</a>
+                        <div  key={i}  >
+                            <a className={currentId === h.id ? 'active' : ''}  href={`#${h.id}`}>{h.textContent}</a>
                         </div>
                     )
                     }

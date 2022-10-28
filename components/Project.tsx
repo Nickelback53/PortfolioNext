@@ -4,7 +4,7 @@ import ProjectItem from "./projects/projects-item";
 
 
 export default function Project(result: any) {
-    console.log(result)
+    //console.log(result)
     const projects = result.result;
 
 

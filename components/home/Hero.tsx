@@ -23,9 +23,7 @@ export default function Hero() {
                 <Animation />
             </div>
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-center md:text-center mb-2 md:mb-0 items-center text-center">
-                    
                     <div className="wrapper">
-                        <h2 className="hidden" >홈화면</h2>
                         <h1><div className='blinking-cursor text-3xl'>{intro}</div></h1>
                     </div>
                 {/* <div className="flex justify-center">

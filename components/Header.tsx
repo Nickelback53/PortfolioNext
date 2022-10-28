@@ -15,7 +15,7 @@ export default function Header() {
                     </a>
                     <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
                         <Link href="https://open.kakao.com/o/sSNTV7Je">
-                        <a  className="mr-5 hover:text-gray-900" >연락하기</a>
+                            <a  className="mr-5 hover:text-gray-900" >연락하기</a>
                         </Link>
                         {/* <a className="mr-5 hover:text-gray-900">Second Link</a>
                         <a className="mr-5 hover:text-gray-900">Third Link</a>

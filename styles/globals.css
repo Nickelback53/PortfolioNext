@@ -48,16 +48,9 @@
     }
   }
 
-.active{
-    @apply opacity-100
-            hover:opacity-80
-            dark:text-slate-50
 
-}
 
-.not-active{
 
-}
 
 
 h1, h2, h3, h4, h5, h6{
@@ -73,6 +66,10 @@ a{
     @apply text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-50
 }
 
+a.active{
+  @apply  text-slate-900 dark:text-white
+
+}
 
 p{
     @apply text-slate-500 dark:text-slate-400
