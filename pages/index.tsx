@@ -55,10 +55,10 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     method: 'POST',
     url: `https://api.notion.com/v1/databases/${DATABASE_ID}/query`,
     headers: {
-      accept: 'application/json',
+      'accept': 'application/json',
       'Notion-Version': '2022-06-28',
       'content-type': 'application/json',
-      authorization: `Bearer ${TOKEN}`
+      'authorization': `Bearer ${TOKEN}`
     },
     data: {
       "sorts": [

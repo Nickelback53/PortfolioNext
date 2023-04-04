@@ -15,8 +15,9 @@ export default function ProjectItem({  data }: PropsWithChildren<ModalDefaultTyp
     const databaseId = project.parent.database_id;
     const description = project.properties.Description.rich_text[0].plain_text;
     const github = project.properties.Github.url;
-    const url = project.properties.URL.url;
-    const img = project.cover.external?.url || project.cover.file.url;
+    const gitUrl = project.properties.URL.url;
+    //const img = project.cover.external?.url || project.cover.file.url;
+    const img = project.cover.file?.url || project.cover.external.url ;
     const tags = project.properties.태그.multi_select;
     const startDate = project.properties.WorkPeriod.date.start;
     const endDate = project.properties.WorkPeriod.date.end;
@@ -45,11 +46,12 @@ export default function ProjectItem({  data }: PropsWithChildren<ModalDefaultTyp
                     quality={100}
                     onClick={() => onModalHandler(project.id)}
                 />
+                {/* <img src={img}></img> */}
                 <div className="p-4 flex flex-col">
                     <h1 className="text-2xl font-bold">{title}</h1>
                     <h3 className="mt-4 text-xl">{description}</h3>
                     <a href={github} >깃허브 바로가기</a>
-                    <a href={url} >URL 바로가기</a>
+                    <a href={gitUrl} >URL 바로가기</a>
                     <h3>{startDate} ~ {endDate}</h3>
 
                     <div className="flex items-start mt-2">
