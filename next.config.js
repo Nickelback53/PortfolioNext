@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
+  //swcMinify: true,
   images: {
     domains:[
       'www.notion.so',
@@ -9,7 +9,7 @@ const nextConfig = {
       's3.us-west-2.amazonaws.com'
       
     ],
-    format: ['image/png', 'image/webp', 'image/jpeg']
+    //format: ['image/png', 'image/webp', 'image/jpeg']
   }
 }
 
