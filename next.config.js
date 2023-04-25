@@ -3,13 +3,12 @@ const nextConfig = {
   reactStrictMode: true,
   //swcMinify: true,
   images: {
-    domains:[
+    domains: [
       'www.notion.so',
       'images.unsplash.com',
-      's3.us-west-2.amazonaws.com'
-      
+      's3.us-west-2.amazonaws.com'   
     ],
-    //format: ['image/png', 'image/webp', 'image/jpeg']
+    format: ['image/png', 'image/webp', 'image/jpeg']
   }
 }
 
